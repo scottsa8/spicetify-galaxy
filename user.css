@@ -262,32 +262,6 @@ a.marketplace-tabBar-headerItemLink {
 PLAYER BAR
 -------------------
 */
-footer.main-nowPlayingBar-container {
-    border: none;
-}
-.player-controls__buttons.player-controls__buttons--new-icons {
-    margin: 0 20px 0 30px;
-    width: fit-content;
-}
-.player-controls {
-    flex-direction: row;
-}
-.main-trackInfo-container {
-    flex-grow: 1;
-    flex-basis: 0;
-}
-.main-nowPlayingBar-center {
-    max-width: none;
-    flex-grow: 1;
-}
-.main-nowPlayingBar-right {
-    width: 280px;
-    margin-left: 20px;
-}
-
-.main-nowPlayingBar-left {
-    width: 20%;
-}
 button.main-playPauseButton-button {
     background: none;
     color: var(--spice-text);
@@ -296,6 +270,39 @@ button.main-playPauseButton-button {
 .main-playPauseButton-button svg {
     height: 20px;
     width: 21px;
+}
+.playback-bar {
+    position: relative !important;
+    display: block !important;
+    --playback-bar-grid-gap: 8px !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -webkit-box-pack: justify !important;
+    -webkit-box-align: center !important;
+    align-items: center !important;
+    display: -webkit-box !important;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: var(--playback-bar-grid-gap) !important;
+    justify-content: space-between !important;
+    height: 12px !important;
+}
+
+.x-progressBar-progressBarBg {
+    --progress-bar-height: 6px !important;
+    --progress-bar-radius: 10px !important;
+}
+
+:root .Root__now-playing-bar .playback-bar > div {
+    height: 17.59px !important;
+}
+
+.player-controls__buttons--new-icons {
+    margin-bottom: 12px !important;
+}
+
+.main-nowPlayingBar-nowPlayingBar {
+    padding-bottom: 0px !important;
 }
 /* progress bar moves smoothly */
 .x-progressBar-fillColor {
